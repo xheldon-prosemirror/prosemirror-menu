@@ -370,7 +370,7 @@ export const icons = {
 // :: MenuItem
 // Menu item for the `joinUp` command.
 export const joinUpItem = new MenuItem({
-  title: "Join with above block",
+  title: "与上面的 block 做拼接",
   run: joinUp,
   select: state => joinUp(state),
   icon: icons.join
@@ -379,7 +379,7 @@ export const joinUpItem = new MenuItem({
 // :: MenuItem
 // Menu item for the `lift` command.
 export const liftItem = new MenuItem({
-  title: "Lift out of enclosing block",
+  title: "提升一个 block",
   run: lift,
   select: state => lift(state),
   icon: icons.lift
@@ -388,7 +388,7 @@ export const liftItem = new MenuItem({
 // :: MenuItem
 // Menu item for the `selectParentNode` command.
 export const selectParentNodeItem = new MenuItem({
-  title: "Select parent node",
+  title: "选择父级节点",
   run: selectParentNode,
   select: state => selectParentNode(state),
   icon: icons.selectParentNode
@@ -397,7 +397,7 @@ export const selectParentNodeItem = new MenuItem({
 // :: MenuItem
 // Menu item for the `undo` command.
 export let undoItem = new MenuItem({
-  title: "Undo last change",
+  title: "撤销",
   run: undo,
   enable: state => undo(state),
   icon: icons.undo
@@ -406,7 +406,7 @@ export let undoItem = new MenuItem({
 // :: MenuItem
 // Menu item for the `redo` command.
 export let redoItem = new MenuItem({
-  title: "Redo last undone change",
+  title: "重做",
   run: redo,
   enable: state => redo(state),
   icon: icons.redo
